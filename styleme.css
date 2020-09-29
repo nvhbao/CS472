@@ -14,4 +14,6 @@ h1 {
     background-color: yellow;
   }
   
-  
+  .mood {
+    height: 300px;
+  }  
