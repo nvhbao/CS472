@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Registration</title>
+  <link href="registration.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <form method=POST>
+      <div class="divTable registerTitle">
+        <div class="divTableBody">          
+          <div class="divTableRow">
+            <div class="divTableCell">
+              <div id=header class=header>
+                Workshop Registration <select name=meal><option>More Actions</option></select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id=title class=registerStatement>
+        Register now while seats are available!
+      </div>
+      
+      <div class="divTable registerTable">
+        <div class="divTableBody">          
+          <div class="divTableRow">
+            <div class="divTableCell">
+              <div class="divTable registerLeft">
+                <div class="divTableBody">
+                  <div class="divTableRow">
+                    <div class="divTableCell">First Name * </div>
+                    <div class="divTableCell"><input type="text" name=firstName required></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Last Name * </div>
+                    <div class="divTableCell"><input type="text" name=lastName required></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Company/Institution * </div> 
+                    <div class="divTableCell"><input type="text" name=company required></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Address * </div>
+                    <div class="divTableCell"><textarea name=address rows=4 cols=30 required></textarea></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">City </div>
+                    <div class="divTableCell"><input type="text" name=lastName></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">State / Provide/ Region</div>
+                    <div class="divTableCell">
+                       <select name=state class="option">
+                         <option>-Select-</option>
+                         <option>California</option>
+                         <option>Florida</option>
+                         <option>Iowa</option> 
+                         </select></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Country</div>
+                    <div class="divTableCell">
+                       <select name=country class="option">
+                         <option>-Select-</option>
+                         <option>AUS</option>
+                         <option>USA</option>
+                         <option>VNM</option>            
+                         </select></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Email * </div>
+                    <div class="divTableCell"><input type="text" name=email pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}" required></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Phone Number *</div>
+                    <div class="divTableCell"><input type="text" name=email required></div>
+                  </div>          
+                </div>
+              </div>
+            </div>
+            <div class="divTableCell">
+              <div class="divTable registerRight">
+                <div class="divTableBody">
+                  <div class="divTableRow">
+                    <div class="divTableCell"><div id=lunch class="underline">Lunch</div></div>
+                    <div class="divTableCell"></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Meal Preference *</div> 
+                      <div class="divTableCell">
+                      <select name=meal class="option">
+                         <option>-Select-</option>
+                         <option>Vegeterian</option>
+                         <option>Meat</option>         
+                      </select></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell"><div id=payment class="underline">Payment Details</div></div>
+                    <div class="divTableCell"></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Payment mode</div>
+                    <div class="divTableCell">
+                      <input type=checkbox name=cash />Cash<br>
+                      <input type=checkbox name=cash />Cheque<br>
+                      <input type=checkbox name=cash />Demand Craft<br>
+                    </div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">DD/Cheque No.</div>
+                    <div class="divTableCell"><input type="text" name=chequeNo></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Drawn on (Bank Name) </div><div class="divTableCell"><input type="text" name=drawnBankName></div>
+                  </div>
+                  <div class="divTableRow">
+                    <div class="divTableCell">Payable at</div>
+                    <div class="divTableCell"><input type="text" name=payable></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <div id=footer class=footer>
+            <input type=submit name=btnSubmit value=Submit class="button" />
+            <input type=button name=btnReset value=Reset class="button"/>
+      </div>
+    </form>  
+  </body>
+</html>
