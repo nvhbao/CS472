@@ -1,0 +1,90 @@
+div.header {
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: #29ADAB;
+  padding: 10px;
+  wra
+}
+
+.registerStatement {
+  font-weight: normal;
+  text-decoration: underline;
+  padding: 18px;
+  font-size: 20px;
+}
+
+div.registerLeft {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+div.registerRight {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+div.registerTable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+div.registerTitle {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.divTable.registerLeft .divTableCell, .divTable.registerLeft .divTableHead,
+.divTable.registerRight .divTableCell, .divTable.registerRight .divTableHead,
+.divTable.registerTable .divTableCell, .divTable.registerTable .divTableHead,
+.divTable.registerTitle .divTableCell, .divTable.registerTitle .divTableHead {  
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+.underline {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+div.footer {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #C4C5C5;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #29ADAB;
+  width: 100px;
+}
+
+.option {
+  width: 200px;
+}
+
+input[type=text], textarea {
+  width: 200px;
+}
+
+
+
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
