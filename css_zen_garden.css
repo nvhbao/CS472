@@ -41,7 +41,21 @@ li { text-decoration: none; list-style-type: none; display: block; color: #000; 
 .intro { width: 356px; float: left; }
 header { margin-bottom: 20px; float: left;	}
 
+h1 { 
+	background: transparent url(images/h1.gif) no-repeat top left;  
+	width: 355px; 
+	height: 29px; 
+	float: left;
+	margin: 0px;
+	}
 
+h2 { 
+	background: transparent url(images/h2.gif) no-repeat top left; 
+	width: 167px; 
+	height: 12px; 
+	float: right;
+	margin: 2px 0 0 0;
+	}
 .summary {
 	background: transparent url(divider01.jpg) no-repeat;
 	float: left;
