@@ -25,7 +25,7 @@ function makeBigger() {
     // called each time the timer goes off
     size += 4;
     txtSample.style.fontSize = size + "pt";
-    }, 1000);
+    }, 500);
   } else { 
     clearInterval(timer);
     timer = null;
