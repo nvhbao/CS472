@@ -13,9 +13,9 @@ function makeBigger() {
   var txtSample = document.getElementById("txtSample");
 
   //Will ask professor Xing why this statement can not get its font-size
-  //Temporary hard code initial font-size: 12pt
   //var size = parseInt(txtSample.style.fontSize);
-  var size = 12;
+  var style=window.getComputedStyle(document.getElementById("txtSample"),null);
+  var size=parseInt(style.fontSize.replace("px",""));
 
   size += 4;
   txtSample.style.fontSize = size + "pt";
