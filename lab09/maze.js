@@ -1,62 +1,42 @@
-window.onload = function() {
-    $("start").onclick = startClick;
-    $("end").onmouseover = overEnd;
-    $("maze").onmouseleave = noCheat;
-    
-    $(".boundary").mouseenter(function(){
+$(document).ready(function () {
+    $("#start").click(function() {
+      startClick();
+    });
+  
+    $("#end").mouseover(function () {
+      overEnd();
+    });
+    $("#maze").mouseleave(function() {
+      noCheat();
+    });   
+    $(".boundary").mouseover(function(){
         overBoundary();
       });
-    $("#maze").mouseleave(function(){
-        overBoundary();
-      });
-    /*
-    var boundaries = $$("div#maze div.boundary");
-    for (var i = 0; i < boundaries.length; i++) {
-        boundaries[i].onmouseover = overBoundary;
-        boundaries[i].onmousleave = overBoundary;
-    }
-    */
-};
+});
 
 function overBoundary() {
-    var x = document.getElementsByClassName("boundary");
-
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "red";
-        if (x[i].style.backgroundColor == "red") {
-            var s = document.getElementById("status").innerHTML = "You Lose!";
-        }
-    }
+    $(".boundary").addClass("youlose");
+    $("#status").text("You Lose!");
+    $("#status").text();
 }
 
 function startClick() {
-    var x = document.getElementsByClassName("boundary");
-
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "#eeeeee";
-        if (x[i].style.backgroundColor != "red") {
-            var s = document.getElementById("status").innerHTML = "Move your mouse over the 'S' to begin.";
-        }
-    }
+    console.log("Start");
+    $(".boundary").removeClass("youlose");
+    $("#status").text("Game is started");
+    $("#status").text();
 }
 
 function overEnd() {
-    var x = document.getElementsByClassName("boundary");
-
-    for (var i = 0; i < x.length; i++) {
-        if (x[i].style.backgroundColor != "red") {
-            var s = document.getElementById("status").innerHTML = "You win!";
-        }
-    }
+    console.log("End");
+    $("#status").text("You win");
+    $("#status").text();
 }
 
 function noCheat() {
-    var x = document.getElementsByClassName("boundary");
-
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "red";
-        if (x[i].style.backgroundColor == "red") {
-            var s = document.getElementById("status").innerHTML = "Nice Try...";
-        }
-    }
+    console.log("NoCheat");
+    $(".boundary").addClass("youlose");
+    $("#status").text("Nice try...");
+    $("#status").text();
 }
+
